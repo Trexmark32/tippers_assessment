@@ -5,6 +5,7 @@ const PORT = process.env.PORT || 4098;
 
 // UncaughtException Error
 process.on("uncaughtException", (err) => {
+    console.error(err);
     console.log(`Error: ${err.message}`);
     process.exit(1);
 });
